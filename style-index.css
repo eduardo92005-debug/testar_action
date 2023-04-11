@@ -1,0 +1,88 @@
+.btn-primary {
+        --bs-btn-color: #fff;
+        --bs-btn-bg: #033a66;
+        --bs-btn-border-color: #033a66;
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: #033a66;
+        --bs-btn-hover-border-color: #033a66;
+        --bs-btn-focus-shadow-rgb: 49, 132, 253;
+        --bs-btn-active-color: #fff;
+        --bs-btn-active-bg: #0a58ca;
+        --bs-btn-active-border-color: #0a53be;
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: #fff;
+        --bs-btn-disabled-bg: #0d6efd;
+        --bs-btn-disabled-border-color: #0d6efd;
+    }
+
+    .classe-que-nao-vai-ser-usada {
+        width: 100%;
+        display: flex;
+    }
+    .wrapper-card {
+        display: flex;
+        height: 280px;
+        width: 18rem;
+        flex-direction: column;
+        border: 1px solid grey;
+        overflow: hidden;
+        cursor: pointer;
+        background-image: url("https://media.istockphoto.com/id/1312008011/vector/white-grunge-vector-background.jpg?b=1&s=612x612&w=0&k=20&c=wKTbMewyT0Aye94x0hR3a6_MgoU2ZbZxNBWoB2uRs0w=");
+        transition: border 0.5s, transform 0.5s, box-shadow 0.5s;
+        border-radius:5px;
+    }
+
+    .wrapper-card:hover {
+        border: 1px solid hsl(206.7, 94.3%, 50.6%);
+        transform: scale(1.02);
+        box-shadow: 2px 2px 13px -2px #000;
+    }
+
+
+
+    .card__image {
+        height: 28%;
+    }
+
+    .card__image-el {
+        height: 100%;
+        object-fit: fill;
+        border-bottom: 1px solid #eee;
+    }
+
+    .info-wrapper {
+        height: 60%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .info-wrapper>* {
+        margin: 5px 10px;
+    }
+
+    .info__excerpt {
+        color: grey;
+    }
+
+    .info__date {
+        color: grey;
+    }
+
+    .btn-category {
+        padding: 5px;
+        font-size: 0.75em;
+        border-radius: 20px;
+    }
+
+    .info__title {
+        font-weight: bold;
+    }
+
+    .info__btn-wrapper {
+        height: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
