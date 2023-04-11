@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Minify with node-minify Action
-        uses: eduardo92005-debug/purge-css-action@v2
+        uses: eduardo92005-debug/purge-css-action@v3
