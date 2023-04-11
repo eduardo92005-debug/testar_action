@@ -2,36 +2,11 @@ name: Minify with node-minify
 on:
   push:
     branches: [ production ]
-  workflow_call:
-    inputs:
-      css-path:
-        description: 'Path to css files'
-        required: true
-        type: string
-      html-path:
-        description: 'Path to html files'
-        required: true
-        type: string
-        
         
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # Checks-out your repository
-      - uses: actions/checkout@v2
-        with:
-          ref: ${{ github.ref }}
-                
       - name: Minify with node-minify Action
         uses: eduardo92005-debug/purge-css-action@v1
-        with:
-          css: ${{ inputs.css-path }}
-          html-path: ${{ inputs.html-path }}
-
-      # Auto-commit to repository
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: Minified
-          branch: ${{ github.ref }}
