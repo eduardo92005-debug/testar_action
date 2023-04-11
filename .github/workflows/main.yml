@@ -2,8 +2,11 @@ name: Minify with node-minify
 on:
   push:
     branches: [ production ]
-env:
-  test_var: 'teste'
+  workflow_dispatch:
+    inputs:
+      test_var:
+        type: string
+        description: Who to greet
 
 jobs:
   build:
@@ -12,4 +15,4 @@ jobs:
       - name: Minify with node-minify Action
         uses: eduardo92005-debug/purge-css-action@v5
         with:
-          test_var: ${{ env.TEST_VAR }} 
+          test_var: ${{ inputs.TEST_VAR }} 
