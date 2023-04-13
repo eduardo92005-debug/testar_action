@@ -1,0 +1,238 @@
+<html>
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="slider animate-fadeInFadeOut">
+            <img width="100%" height="100%"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLOWQcPSWLc7v2iwM9riIOC2ikIjXCFve71sIm4JhyIg&s" />
+
+            <div class="slider__description">
+                <h1 class="text-white font-weight-bolder"> Joãozinho de Jesus</h1>
+                <p class="text-muted"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quam p
+                    ossimus! Facere laborum porro delectus officia assumenda error minima nihil veli
+                    t debitis eum minus blanditiis voluptates, maxime earum sapiente, deserunt cumque sa
+                    epe ad odio quam sequi, unde dolorum? Consequuntur qui id pariatur nobis illo libero inc
+                    idunt fugiat mollitia? Illum, numquam?
+                </p>
+
+            </div>
+        </div>
+
+        <div class="next-slides h-100">
+            <div class="next-slides__description-1 next-slides__description-item pt-3">
+                <div class="font-weight-bolder text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Illum,
+                    quisquam.</div>
+                <span class="text-muted-1">Data: 22/09/1998</span>
+            </div>
+
+            <div class="next-slides__description-2 next-slides__description-item">
+                <div class="font-weight-bolder text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Illum,
+                    quisquam.</div>
+                <span class="text-muted-1">Data: 22/09/1998</span>
+            </div>
+
+            <div class="next-slides__description-3 next-slides__description-item">
+                <div class="font-weight-bolder text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Illum,
+                    quisquam.</div>
+                <span class="text-muted-1">Data: 22/09/1998</span>
+            </div>
+
+            <div class="next-slides__description-4 next-slides__description-item">
+                <div class="font-weight-bolder text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Illum,
+                    quisquam.</div>
+                <span class="text-muted-1">Data: 22/09/1998</span>
+            </div>
+
+            <div class="next-slides__description-5 next-slides__description-item d-flex justify-content-center mb-4">
+                <button class="btn btn-primary"> Ver todas as notícias </button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+    integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+    integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+    crossorigin="anonymous"></script>
+<script>
+    links_img = {
+        "images":
+            [
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLOWQcPSWLc7v2iwM9riIOC2ikIjXCFve71sIm4JhyIg&s",
+                "https://cdn.ahnegao.com.br/wp-content/uploads/2012/10/wtf2.jpg",
+                "https://cdn.ahnegao.com.br/wp-content/uploads/2012/12/manequim.jpg",
+            ]
+    }
+
+    to_delete = [...links_img.images]
+    to_show = to_delete[0];
+    $(document).ready(function () {
+        // setInterval(function () {
+        //     to_delete_length = to_delete.length
+        //     if(to_delete_length > 0){
+        //         $('.slider').fadeIn().delay(1000).fadeOut();
+        //         $('.slider img ').attr('src', to_show)
+        //         to_show = (to_delete).slice(-1);
+        //         to_delete.pop()
+        //     }
+        //     else {
+        //         to_delete = [...links_img.images]
+        //     }   
+        // console.log("executei em 5s")    
+        // }, 5000);
+
+        // setInterval(function () {
+        //     contador = 0;
+        //     console.log("Passou ",contador, "s")  
+        // }, 1000);
+        contador = 0;
+        function t() {
+            contador++;
+            console.log(contador);
+        }
+
+        setInterval(t, 1000);
+
+        setInterval(function () {
+            to_delete_length = to_delete.length
+            if (to_delete_length > 0) {
+                $('.slider img').fadeIn('slow').delay(2000).fadeOut('slow')
+                $('.slider .slider__description').fadeIn('slow').delay(2000).fadeOut('slow')
+                $('.slider img').hide();
+                $('.slider .slider__description').hide();
+                $('.slider img ').attr('src', to_show)
+                to_show = (to_delete).slice(-1);
+                to_delete.pop()
+                $('.slider img').show();
+                $('.slider .slider__description').show();
+            }
+            else {
+                to_delete = [...links_img.images]
+            }
+        }, 3500);
+    })
+
+
+
+</script>
+
+<style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .text-muted-1 {
+        color: #bfb5b5 !important;
+    }
+
+    :root {
+        --margin-bottom-grid-default-value: 60px;
+        --grid-default-row-gap-value: 10px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "slider slider slider slider slider slider slider slider slider next_slides next_slides next_slides"
+            "slider slider slider slider slider slider slider slider slider next_slides next_slides next_slides"
+            "slider_description slider_description slider_description slider_description slider_description slider_description slider_description slider_description slider_description next_slides next_slides next_slides";
+        width: 80%;
+        height: 80%;
+        background-color: #033a66;
+    }
+
+    .next-slides__description-item h3 {
+        margin: 0;
+    }
+
+    .slider {
+        grid-area: slider;
+        margin-right: 1.25rem;
+    }
+
+    .slider__description {
+        background: black;
+        grid-area: slider_description;
+        height: 50%;
+    }
+
+
+    .next-slides {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: var(--grid-default-row-gap-value) 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "description_1 description_1"
+            "description_2 description_2"
+            "description_3 description_3"
+            "description_4 description_4"
+            "description_5 description_5";
+        grid-area: next_slides;
+        height: 60%
+    }
+
+
+    .margin-bottom-default-grid {
+        margin-bottom: var(--margin-bottom-grid-default-value);
+    }
+
+
+    .next-slides__description-1 {
+        grid-area: description_1;
+    }
+
+
+
+    .next-slides__description-2 {
+        grid-area: description_2;
+    }
+
+    .next-slides__description-4 {
+        grid-area: description_4;
+    }
+
+    .next-slides__description-3 {
+        grid-area: description_3;
+    }
+
+    .next-slides__description-5 {
+        grid-area: description_5;
+    }
+</style>
